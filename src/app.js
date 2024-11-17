@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const connectDB = require('./config/database');
+const database = require('./config/database');
 const authRoutes = require('./routes/auth');
 const locationRoutes = require('./routes/location');
 const setupSocketIO = require('./services/socketService');
@@ -10,7 +10,7 @@ const setupSocketIO = require('./services/socketService');
 const app = express();
 const server = http.createServer(app);
 
-connectDB();
+const connectDB = database();
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')));
