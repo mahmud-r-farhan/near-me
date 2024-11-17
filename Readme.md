@@ -33,7 +33,7 @@ The **Near-Me** application is a real-time, location-sharing platform that enabl
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/mahmud-r-farhan/near-me.git
+   git clone https://github.com/mahmud-r-farhan/near-me
    cd near-me
 
 
@@ -44,9 +44,9 @@ The **Near-Me** application is a real-time, location-sharing platform that enabl
 
 3. Create a .env file in the root directory and add the following environment variables:
 
-   `PORT=your_port_number
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret`
+   `PORT=your_port_number`
+   `MONGODB_URI=your_mongodb_uri`
+   `JWT_SECRET=your_jwt_secret`
 
 
 4. Start the application:
